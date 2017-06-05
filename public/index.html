@@ -37,10 +37,10 @@
   <!-- ogp -->
   <meta property="og:title" content="#">
   <meta property="og:type" content="article">
-	<meta property="og:description" content="#">
-	<meta property="og:url" content="#">
-	<meta property="og:image" content="#">
-	<meta property="og:site_name" content="#">
+  <meta property="og:description" content="#">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="#">
+  <meta property="og:site_name" content="#">
   <!-- /ogp -->
 
   <!-- twitter -->
@@ -55,6 +55,10 @@
   <!-- behavior -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="assets/js/picturefill.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/bxslider.js"></script>
+  <script src="assets/js/script.js"></script>
   <!-- /behavior -->
   
 </head>
@@ -192,9 +196,11 @@
 
   <!-- bg -->
   <div id="bg">
-    <div class="div_01"><img src="assets/images/bg_img_01.jpg" alt=""></div>
-    <div class="div_02"><img src="assets/images/bg_img_02.jpg" alt=""></div>
-    <div class="div_03"><img src="assets/images/bg_img_03.jpg" alt=""></div>
+    <ul class="ul_01" id="bgSlider">
+      <li><img src="assets/images/bg_img_01.jpg" alt="イメージ"></li>
+      <li><img src="assets/images/bg_img_02.jpg" alt="イメージ"></li>
+      <li><img src="assets/images/bg_img_03.jpg" alt="イメージ"></li>
+    </ul>
   </div>
   <!-- /bg -->
 
@@ -211,18 +217,16 @@
       </div>
     </div>
     <div class="l_block_02">
-      <div class="l_box_01">
-        <ul>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
+      <div class="l_block_02_inner">
+        <ul class="ul_02">
+          <li><img src="assets/images/footer_icon_01.png" alt="イメージ"></li>
+          <li><img src="assets/images/footer_icon_02.png" alt="イメージ"></li>
+          <li><img src="assets/images/footer_icon_03.png" alt="イメージ"></li>
         </ul>
-      </div>
-      <div class="l_box_02">
         <p class="p_01">平成28年度 文化庁　文化芸術による地域活性化・国際発信推進事業<br>Supported by the Agency for Cultural Affairs Government of Japan in the fiscal 2016</p>
+        <p class="p_02"><small>&copy; 2016 21st Century Craft Festival ALL RIGHTS RESERVED.</small></p>
       </div>
     </div>
-    <p><small>&copy; 2016 21st Century Craft Festival ALL RIGHTS RESERVED.</small></p>
   </footer>
   <!-- /footer -->
   

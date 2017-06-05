@@ -380,7 +380,7 @@ main
     width: 100%;
     height: 100vh;
 }
-#bg div
+#bg .ul_01 li
 {
     position: absolute;
     top: 0;
@@ -389,7 +389,7 @@ main
     width: 100%;
     height: 100%;
 }
-#bg div img
+#bg .ul_01 li img
 {
     position: absolute;
     top: 50%;
@@ -472,6 +472,59 @@ footer .l_block_02
 {
     background-color: #fff;
 }
+footer .l_block_02 .l_block_02_inner
+{
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 100px 26px;
+
+    text-align: center;
+}
+footer .l_block_02 .l_block_02_inner .ul_02
+{
+    display: inline-block;
+
+    vertical-align: middle;
+}
+footer .l_block_02 .l_block_02_inner .ul_02 li
+{
+    display: inline-block;
+
+    height: 41px; 
+
+    vertical-align: middle;
+}
+footer .l_block_02 .l_block_02_inner .ul_02 li:nth-child(n+2)
+{
+    margin-left: 20px;
+}
+footer .l_block_02 .l_block_02_inner .ul_02 li img
+{
+    width: auto;
+    height: 100%;
+}
+footer .l_block_02 .l_block_02_inner .p_01
+{
+    font-size: 9px;
+    line-height: 1.4; 
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    text-align: left;
+    vertical-align: middle;
+}
+footer .p_02
+{
+    font-size: 10px;
+    line-height: 1; 
+
+    margin-top: 10px;
+
+    text-align: center;
+    letter-spacing: .08em;
+}
 
 /* /footer */
 #index .about .h2_01
@@ -513,6 +566,7 @@ footer .l_block_02
 #index .mc .h2_01
 {
     font-size: 36px;
+    font-weight: bold;
     line-height: 1; 
 
     text-align: center;
@@ -627,3 +681,10 @@ footer .l_block_02
 
 /* /news */
 /* /layout */
+#bg .bx-wrapper,
+#bg .bx-viewport,
+#bg .ul_01
+{
+    width: 100%;
+    height: 100vh !important;
+}
