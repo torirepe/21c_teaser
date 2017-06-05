@@ -1,0 +1,80 @@
+//h2
+#index .about .h2_01 {
+  color: $c-blue;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  i {
+    display: inline-block;
+    margin-top: .4em;
+    padding: 2px 12px;
+    color: $c-black;
+    font-size: 14px;
+    line-height: 1;
+    background-color: $c-red;
+  }
+}
+#index .about .h2_02 {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.7;
+  letter-spacing: .1em;
+  text-align: center;
+  color: $c-white;
+}
+#index .mc .h2_01 {
+  color: $c-blue;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1;
+}
+#index .news .h2_01 {
+  color: $c-white;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1;
+}
+
+//h4
+#index .sponsor .h2_01,
+#index .sponsor .h2_02,
+#index .sponsor .h2_03 {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  color: $c-white;
+}
+
+//p
+#p_01,
+#index .about .p_01,
+#index .about .p_02 {
+  font-size: 12px;
+  line-height: 1.7;
+  color: $c-white;
+}
+#p_02,
+#index .news .p_01,
+#index .sponsor .p_01 {
+  @extend #p_01;
+  text-align: center;
+}
+
+//address
+#index .sponsor .address_01,
+#index .sponsor .address_02 {
+  p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: $c-white;
+    text-align: center;
+    a {
+      display: inline;
+    }
+  }
+  p:nth-child(2) {
+    font-size: 11px;
+  }
+}
