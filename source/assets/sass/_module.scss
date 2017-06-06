@@ -1,9 +1,11 @@
 //h2
-#index .about .h2_01 {
+#index .about .h2_01,
+#index .mc .h2_01 {
   color: $c-blue;
   font-size: 36px;
   font-weight: bold;
   line-height: 1;
+  letter-spacing: .04em;
   text-align: center;
   i {
     display: inline-block;
@@ -23,21 +25,14 @@
   text-align: center;
   color: $c-white;
 }
-#index .mc .h2_01 {
-  color: $c-blue;
+#index .news .h2_01 {
+  text-align: center;
   font-size: 36px;
   font-weight: bold;
-  text-align: center;
   line-height: 1;
-}
-#index .news .h2_01 {
   color: $c-white;
-  font-size: 36px;
-  text-align: center;
-  line-height: 1;
-}
 
-//h4
+}
 #index .sponsor .h2_01,
 #index .sponsor .h2_02,
 #index .sponsor .h2_03 {
@@ -48,12 +43,25 @@
   color: $c-white;
 }
 
+//h3
+#index .news .h3_01 {
+  padding: 18px 10px;
+  letter-spacing: .02em;
+  background-color: $c-white;
+  color: $c-blue;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: .06em;
+  line-height: 1;
+}
+
 //p
 #p_01,
 #index .about .p_01,
 #index .about .p_02 {
   font-size: 12px;
   line-height: 1.7;
+  letter-spacing: .02em;
   color: $c-white;
 }
 #p_02,
@@ -61,6 +69,14 @@
 #index .sponsor .p_01 {
   @extend #p_01;
   text-align: center;
+}
+
+//ul
+.ul_01 {
+  li {
+    width: 33.3333%;
+    display: inline-block;
+  }
 }
 
 //address
@@ -71,8 +87,13 @@
     line-height: 1.7;
     color: $c-white;
     text-align: center;
+    &:nth-child(n+2) {
+      margin-top: .4em;
+      font-size: 10px;
+    }
     a {
       display: inline;
+      text-decoration: underline;
     }
   }
   p:nth-child(2) {

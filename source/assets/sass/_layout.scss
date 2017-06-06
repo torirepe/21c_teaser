@@ -2,36 +2,71 @@
 
 /* about */
 #index .about {
+  display: table;
   margin: 0 auto;
-  padding: 70px 0;
+  min-height: 800px;
   width: 1000px;
-  .h2_02 {
-    margin-top: 20px;
-  }
-  p {
-    margin: 0 auto;
-    width: 380px;
-    &.p_01 {
-      margin-top: 42px;
+  height: 100vh;
+  .l_inner {
+    display: table-cell;
+    vertical-align: middle;
+    .h2_02 {
+      margin-top: 26px;
     }
-    &.p_02 {
-      margin-top: 16px;
+    p {
+      margin: 0 auto;
+      width: 380px;
+      &.p_01 {
+        margin-top: 42px;
+      }
+      &.p_02 {
+        margin-top: 16px;
+      }
     }
   }
 }
 /* /about */
 
-/* main_content */
-#index .mc {
-  background-color: $c-white;
-}
-/* /main_content */
-
 /* news */
 #index .news {
+  border: 1px solid $c-white;
+  padding: 68px 78px;
   background-color: $c-blue;
+  .p_01 {
+    margin-top: 40px;
+  }
+  .l_block_01 {
+    margin-top: 30px;
+    text-align: center;
+    .l_box_01,
+    .l_box_02 {
+      display: inline-block;
+      vertical-align: top;
+      width: 360px;
+    }
+    .l_box_02 {
+      margin-left: 40px;
+    }
+  }
 }
 /* /news */
+
+/* sponsor */
+.sponsor {
+  padding: 44px 0;
+  .h2_02,
+  .h2_03 {
+    margin-top: 40px;
+  }
+  .p_01 {
+    margin-top: 6px;
+  }
+  .address_01,
+  .address_02 {
+    margin-top: 6px;
+  }
+}
+/* /sponsor */
 
 
 /* /layout */
