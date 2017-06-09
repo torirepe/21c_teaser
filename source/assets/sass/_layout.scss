@@ -3,10 +3,21 @@
 /* about */
 #index .about {
   display: table;
-  margin: 0 auto;
-  min-height: 800px;
-  width: 1000px;
-  height: 100vh;
+  @include mq(sp) {
+    padding: 17% 0;
+    width: 100%;
+  }
+  @include mq(tb) {
+    width: 100%;
+    min-height: 800px;
+    height: 100vh;
+  }
+  @include mq(pc) {
+    margin: 0 auto;
+    min-height: 800px;
+    width: 1000px;
+    height: 100vh;
+  }
   .l_inner {
     display: table-cell;
     vertical-align: middle;
@@ -15,7 +26,15 @@
     }
     p {
       margin: 0 auto;
-      width: 380px;
+      @include mq(sp) {
+        width: 82%;
+      }
+      @include mq(tb) {
+        width: 380px;
+      }
+      @include mq(pc) {
+        width: 380px;
+      }
       &.p_01 {
         margin-top: 42px;
       }
@@ -29,23 +48,65 @@
 
 /* news */
 #index .news {
-  border: 1px solid $c-white;
-  padding: 68px 78px;
   background-color: $c-blue;
+  @include mq(sp) {
+    padding: 10% 0;
+  }
+  @include mq(tb) {
+    padding: 70px 0;
+  }
+  @include mq(pc) {
+    border: 1px solid $c-white;
+    padding: 68px 78px;
+  }
   .p_01 {
-    margin-top: 40px;
+    @include mq(sp) {
+      margin-top: 7%;
+    }
+    @include mq(tb) {
+      margin-top: 40px;
+    }
+    @include mq(pc) {
+      margin-top: 40px;
+    }
   }
   .l_block_01 {
-    margin-top: 30px;
-    text-align: center;
+    @include mq(sp) {
+      margin-top: 7%;
+    }
+    @include mq(tb) {
+      margin-top: 30px;
+    }
+    @include mq(pc) {
+      margin-top: 30px;
+      text-align: center;
+    }
     .l_box_01,
     .l_box_02 {
-      display: inline-block;
-      vertical-align: top;
-      width: 360px;
+      @include mq(sp) {
+        margin: 0 auto;
+        width: 82%;
+      }
+      @include mq(tb) {
+        margin: 0 auto;
+        width: 360px;
+      }
+      @include mq(pc) {
+        display: inline-block;
+        vertical-align: top;
+        width: 360px;
+      }
     }
     .l_box_02 {
-      margin-left: 40px;
+      @include mq(sp) {
+        margin-top: 7%;
+      }
+      @include mq(tb) {
+        margin-top: 20px;
+      }
+      @include mq(pc) {
+        margin-left: 40px;
+      }
     }
   }
 }
@@ -53,17 +114,49 @@
 
 /* sponsor */
 .sponsor {
-  padding: 44px 0;
+  @include mq(sp) {
+    padding: 14% 0;
+  }
+  @include mq(tb) {
+    padding: 44px 0;
+  }
+  @include mq(pc) {
+    padding: 44px 0;
+  }
   .h2_02,
   .h2_03 {
-    margin-top: 40px;
+    @include mq(sp) {
+      margin-top: 7%;
+    }
+    @include mq(tb) {
+      margin-top: 40px;
+    }
+    @include mq(pc) {
+      margin-top: 40px;
+    }
   }
   .p_01 {
-    margin-top: 6px;
+    @include mq(sp) {
+      margin-top: .4em;
+    }
+    @include mq(tb) {
+      margin-top: 6px;
+    }
+    @include mq(pc) {
+      margin-top: 6px;
+    }
   }
   .address_01,
   .address_02 {
-    margin-top: 6px;
+    @include mq(sp) {
+      margin-top: 2.4%;
+    }
+    @include mq(tb) {
+      margin-top: 6px;
+    }
+    @include mq(pc) {
+      margin-top: 6px;
+    }
   }
 }
 /* /sponsor */

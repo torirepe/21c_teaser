@@ -1,6 +1,7 @@
 $(document).ready(function(){
   bgSlider();
   mcSlider();
+  mcAccordion();
   blur();
 });
 $(window).load(function(){
@@ -11,6 +12,8 @@ $(window).load(function(){
 function bgSlider() {
   $("#bgSlider").bxSlider({
     auto: true,
+    controls: false,
+    pager: false,
     mode: 'fade',
     pause: 2000,
     speed: 8000,
@@ -25,7 +28,16 @@ function mcSlider() {
     controls: false,
     pager: true,
     pagerCustom: "#mcPager",
-    infiniteLoop: false
+    infiniteLoop: false,
+    touchEnabled: false,
+  });
+}
+
+//mcAccordion
+function mcAccordion() {
+  $("#mcAccordion h3").click(function(){
+    $(this).toggleClass("active");
+    $(this).next("div").slideToggle();
   });
 }
 

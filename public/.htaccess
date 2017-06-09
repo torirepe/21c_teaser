@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/kanazawa21kougei/www/2017_teaser/.htpasswd
+require valid-user

@@ -1,36 +1,71 @@
 //h2
-#index .about .h2_01,
-#index .mc .h2_01 {
+#index .about .h2_01 {
   color: $c-blue;
-  font-size: 36px;
   font-weight: bold;
   line-height: 1;
   letter-spacing: .04em;
   text-align: center;
+  @include mq(sp) {
+    @include fzvw(42);
+  }
+  @include mq(tb) {
+    font-size: 36px;
+  }
+  @include mq(pc) {
+    font-size: 36px;
+  }
   i {
     display: inline-block;
-    margin-top: .4em;
-    padding: 2px 12px;
     color: $c-black;
-    font-size: 14px;
     line-height: 1;
     background-color: $c-red;
+    @include mq(sp) {
+      padding: 1.2% 2.4%;
+      margin-top: 2.6em;
+      @include fzvw(22);
+    }
+    @include mq(tb) {
+      padding: 2px 12px;
+      margin-top: .4em;
+      font-size: 14px;
+    }
+    @include mq(pc) {
+      padding: 2px 12px;
+      margin-top: .4em;
+      font-size: 14px;
+    }
   }
 }
 #index .about .h2_02 {
-  font-size: 12px;
   font-weight: bold;
   line-height: 1.7;
   letter-spacing: .1em;
   text-align: center;
   color: $c-white;
+  @include mq(sp) {
+    @include fzvw(22);
+  }
+  @include mq(tb) {
+    font-size: 12px;
+  }
+  @include mq(pc) {
+    font-size: 12px;
+  }
 }
 #index .news .h2_01 {
   text-align: center;
-  font-size: 36px;
   font-weight: bold;
   line-height: 1;
   color: $c-white;
+  @include mq(sp) {
+    @include fzvw(42);
+  }
+  @include mq(tb) {
+    font-size: 36px;
+  }
+  @include mq(pc) {
+    font-size: 36px;
+  }
 
 }
 #index .sponsor .h2_01,
@@ -51,6 +86,7 @@
   color: $c-blue;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
   letter-spacing: .06em;
   line-height: 1;
 }
@@ -59,20 +95,59 @@
 #p_01,
 #index .about .p_01,
 #index .about .p_02 {
-  font-size: 12px;
   line-height: 1.7;
   letter-spacing: .02em;
   color: $c-white;
+  @include mq(sp) {
+    @include fzvw(20);
+  }
+  @include mq(tb) {
+    font-size: 12px;
+  }
+  @include mq(pc) {
+    font-size: 12px;
+  }
 }
-#p_02,
-#index .news .p_01,
-#index .sponsor .p_01 {
-  @extend #p_01;
+#index .news .p_01 {
   text-align: center;
+  line-height: 1.7;
+  letter-spacing: .02em;
+  color: $c-white;
+  @include mq(sp) {
+    margin-top: .24em;
+    @include fzvw(21);
+  }
+  @include mq(tb) {
+    font-size: 12px;
+  }
+  @include mq(pc) {
+    font-size: 12px;
+  }
+  i {
+    display: block;
+    @include mq(sp) {
+      margin-top: .4em;
+    }
+  }
+}
+#index .sponsor .p_01 {
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: .02em;
+  color: $c-white;
+  @include mq(sp) {
+    @include fzvw(24);
+  }
+  @include mq(tb) {
+    font-size: 12px;
+  }
+  @include mq(pc) {
+    font-size: 12px;
+  }
 }
 
 //ul
-.ul_01 {
+#index .news .ul_01 {
   li {
     width: 33.3333%;
     display: inline-block;

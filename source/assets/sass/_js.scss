@@ -1,6 +1,14 @@
 //h2
 #bg {
-  transform: scale(1.1);
+  @include mq(sp) {
+    transform: scale(1.2);
+  }
+  @include mq(tb) {
+    transform: scale(1.2);
+  }
+  @include mq(pc) {
+    transform: scale(1.1);
+  }
   transition: all 1.2s ease;
   background-color: #000;
   .bx-wrapper,
